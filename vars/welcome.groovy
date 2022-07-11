@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
 
-def call(String url) {
+def cloneGitRepo(String url) {
   sh "git clone ${url}"
 }
