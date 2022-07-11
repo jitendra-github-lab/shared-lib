@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-def call(String url) {
+def checkoutRepo(String url) {
   sh "git clone ${url}"
   sh "ls -ltr -a"
   dir('docker-practical'){
